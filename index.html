@@ -6,7 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Todo App</title>
 </head>
-<body>
-    <h1>My Todo App</h1>
-</body>
+<main>
+    <div class="container">
+        <h1 class="app-title">My todos!</h1>
+
+        <!-- welcome state -->
+        <div class="welcome-section">
+            <svg class="checklist-icon">
+                <use href="#checklist-icon"></use>
+            </svg>
+            <h2 class="welcome-section_title">Get things done.</h2>
+            <p class="welcome-section_description">What's your schedule like today?</p>
+        </div>
+
+        <!--  end    -->
+        <form class="js-form">
+            <input autofocus type="text" aria-label="Enter a new todo item"
+                placeholder="E.g. Subscribe to J For JavaScript 😉" class="js-todo-input">
+            <button id="add"><svg>
+                    <use href="#add-icon"></use>
+                </svg></button>
+        </form>
+        <ul class="todo-list js-todo-list"></ul>
+    </div>
+</main>
+
+<svg>
+    <defs>
+        <symbol id="checklist-icon" viewBox="0 0 20 20">
+            <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
+            <path fill-rule="evenodd"
+                d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm9.707 5.707a1 1 0 00-1.414-1.414L9 12.586l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"></path>
+        </symbol>
+
+        <symbol id="delete-icon" viewBox="0 0 448 448">
+            <path
+                d="m224 0c-123.710938 0-224 100.289062-224 224s100.289062 224 224 224 224-100.289062 224-224c-.132812-123.65625-100.34375-223.867188-224-224zm124.449219 325.824219c4.15625 4.015625 5.828125 9.964843 4.363281 15.558593s-5.835938 9.964844-11.429688 11.429688-11.542968-.207031-15.558593-4.363281l-101.824219-101.824219-101.824219 101.824219c-6.277343 6.0625-16.257812 5.976562-22.429687-.195313s-6.257813-16.152344-.195313-22.429687l101.824219-101.824219-101.824219-101.824219c-4.15625-4.015625-5.828125-9.964843-4.363281-15.558593s5.835938-9.964844 11.429688-11.429688 11.542968.207031 15.558593 4.363281l101.824219 101.824219 101.824219-101.824219c6.277343-6.0625 16.257812-5.976562 22.429687.195313s6.257813 16.152344.195313 22.429687l-101.824219 101.824219zm0 0"
+                fill="#D80027" />
+        </symbol>
+        <symbol id="add-icon" viewBox="0 0 448 512">
+            <path
+                d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+            </path>
+        </symbol>
+    </defs>
+</svg>
 </html>
